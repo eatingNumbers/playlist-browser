@@ -23,7 +23,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="LCS-HJ-9PZ" kind="push" id="WA2-ip-BR6"/>
+                                    <segue destination="LCS-HJ-9PZ" kind="push" identifier="showPlaylistDetail" id="WA2-ip-BR6"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -53,8 +53,20 @@
                     <view key="view" contentMode="scaleToFill" id="igj-t9-DcB">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You haven't pressed the button" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d5Q-xH-3Uf">
+                                <rect key="frame" x="40" y="273" width="240" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="0.35294117650000001" green="0.73333333329999995" blue="0.70980392160000005" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" red="0.35294117650000001" green="0.73333333329999995" blue="0.70980392160000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="d5Q-xH-3Uf" secondAttribute="centerX" id="3k4-Fb-3Rs"/>
+                            <constraint firstAttribute="centerY" secondItem="d5Q-xH-3Uf" secondAttribute="centerY" id="4yi-Wr-lIq"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Artists" id="4iO-oH-4bw"/>
                 </viewController>
