@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="FIc-av-9NC">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
-        <!--Playlist Master View Controller-->
+        <!--Playlist-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="PlaylistMasterViewController" sceneMemberID="viewController">
@@ -23,7 +23,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="LCS-HJ-9PZ" kind="modal" id="WA2-ip-BR6"/>
+                                    <segue destination="LCS-HJ-9PZ" kind="push" id="WA2-ip-BR6"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -33,15 +33,16 @@
                             <constraint firstAttribute="centerX" secondItem="gec-bm-fxY" secondAttribute="centerX" id="6NE-R2-1Y1"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Playlist" id="6BC-Iu-Ik3"/>
                     <connections>
                         <outlet property="aButton" destination="gec-bm-fxY" id="T3a-fA-YUw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="783" y="612"/>
+            <point key="canvasLocation" x="861" y="619"/>
         </scene>
-        <!--Playlist Detail View Controller-->
+        <!--Artists-->
         <scene sceneID="Vak-mF-952">
             <objects>
                 <viewController id="LCS-HJ-9PZ" customClass="PlaylistDetailViewController" sceneMemberID="viewController">
@@ -55,10 +56,29 @@
                         <color key="backgroundColor" red="0.35294117650000001" green="0.73333333329999995" blue="0.70980392160000005" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" red="0.35294117650000001" green="0.73333333329999995" blue="0.70980392160000005" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Artists" id="4iO-oH-4bw"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R9c-Um-4T2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1190" y="612"/>
+            <point key="canvasLocation" x="1290" y="619"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ecN-3o-IzK">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FIc-av-9NC" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dbK-rC-mKh">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="fED-ju-Dir"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ewi-Ml-JPR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="444" y="619"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
