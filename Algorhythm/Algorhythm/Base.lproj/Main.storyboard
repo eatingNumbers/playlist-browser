@@ -16,8 +16,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gec-bm-fxY">
-                                <rect key="frame" x="136" y="269" width="46" height="30"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8UT-ht-7nz">
+                                <rect key="frame" x="60" y="184" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="XQW-FE-xFl"/>
+                                    <constraint firstAttribute="height" constant="200" id="gDm-fS-i4d"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gec-bm-fxY">
+                                <rect key="frame" x="137" y="392" width="46" height="30"/>
                                 <state key="normal" title="Button">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -27,10 +34,12 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerY" secondItem="gec-bm-fxY" secondAttribute="centerY" id="4LY-wW-uGM"/>
                             <constraint firstAttribute="centerX" secondItem="gec-bm-fxY" secondAttribute="centerX" id="6NE-R2-1Y1"/>
+                            <constraint firstAttribute="centerX" secondItem="8UT-ht-7nz" secondAttribute="centerX" id="W9W-VL-ZyU"/>
+                            <constraint firstAttribute="centerY" secondItem="8UT-ht-7nz" secondAttribute="centerY" id="jqv-th-fYm"/>
+                            <constraint firstItem="gec-bm-fxY" firstAttribute="top" secondItem="8UT-ht-7nz" secondAttribute="bottom" constant="8" id="trb-OK-ejJ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Playlist" id="6BC-Iu-Ik3"/>
