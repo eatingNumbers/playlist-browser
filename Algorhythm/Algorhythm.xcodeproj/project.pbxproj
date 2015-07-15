@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3C2F99D11B567E6500E62A94 /* PlaylistDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C2F99D01B567E6500E62A94 /* PlaylistDetailViewController.m */; };
+		3C2F99D41B56E40800E62A94 /* MusicLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C2F99D31B56E40800E62A94 /* MusicLibrary.m */; };
 		3CD3561E1B55681E003CC2C9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CD3561D1B55681E003CC2C9 /* main.m */; };
 		3CD356211B55681E003CC2C9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CD356201B55681E003CC2C9 /* AppDelegate.m */; };
 		3CD356241B55681E003CC2C9 /* PlaylistMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CD356231B55681E003CC2C9 /* PlaylistMasterViewController.m */; };
@@ -30,6 +31,8 @@
 /* Begin PBXFileReference section */
 		3C2F99CF1B567E6500E62A94 /* PlaylistDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaylistDetailViewController.h; sourceTree = "<group>"; };
 		3C2F99D01B567E6500E62A94 /* PlaylistDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaylistDetailViewController.m; sourceTree = "<group>"; };
+		3C2F99D21B56E40800E62A94 /* MusicLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicLibrary.h; sourceTree = "<group>"; };
+		3C2F99D31B56E40800E62A94 /* MusicLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicLibrary.m; sourceTree = "<group>"; };
 		3CD356181B55681E003CC2C9 /* Algorhythm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Algorhythm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CD3561C1B55681E003CC2C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3CD3561D1B55681E003CC2C9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -90,6 +93,8 @@
 				3CD356231B55681E003CC2C9 /* PlaylistMasterViewController.m */,
 				3C2F99CF1B567E6500E62A94 /* PlaylistDetailViewController.h */,
 				3C2F99D01B567E6500E62A94 /* PlaylistDetailViewController.m */,
+				3C2F99D21B56E40800E62A94 /* MusicLibrary.h */,
+				3C2F99D31B56E40800E62A94 /* MusicLibrary.m */,
 				3CD356251B55681E003CC2C9 /* Main.storyboard */,
 				3CD356281B55681E003CC2C9 /* Images.xcassets */,
 				3CD3562A1B55681E003CC2C9 /* LaunchScreen.xib */,
@@ -228,6 +233,7 @@
 				3C2F99D11B567E6500E62A94 /* PlaylistDetailViewController.m in Sources */,
 				3CD356211B55681E003CC2C9 /* AppDelegate.m in Sources */,
 				3CD3561E1B55681E003CC2C9 /* main.m in Sources */,
+				3C2F99D41B56E40800E62A94 /* MusicLibrary.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
