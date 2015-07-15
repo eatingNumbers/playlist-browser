@@ -26,9 +26,4 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)buttonPressed {
-    self.view.backgroundColor = [UIColor orangeColor];
-    self.aButton.tintColor = [UIColor redColor]; //Solution for the challenge task #2.
-}
-
 @end
