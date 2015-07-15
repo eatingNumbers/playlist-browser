@@ -16,12 +16,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+
+    [self.aButton setTitle:@"Press me" forState:UIControlStateNormal];
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)buttonPressed {
+    self.view.backgroundColor = [UIColor orangeColor];
+    self.aButton.tintColor = [UIColor redColor]; //Solution for the challenge task #2.
 }
 
 @end
