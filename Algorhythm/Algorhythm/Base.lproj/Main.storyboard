@@ -68,22 +68,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XVK-GU-lG5">
-                                <rect key="frame" x="16" y="64" width="288" height="261"/>
+                                <rect key="frame" x="0.0" y="64" width="320" height="261"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="XVK-GU-lG5" secondAttribute="height" multiplier="32:29" id="fzO-L4-I9X"/>
+                                    <constraint firstAttribute="width" secondItem="XVK-GU-lG5" secondAttribute="height" multiplier="32:29" constant="32" id="fzO-L4-I9X"/>
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8yL-IQ-aHe">
-                                <rect key="frame" x="0.0" y="235" width="320" height="90"/>
+                                <rect key="frame" x="0.0" y="245" width="320" height="80"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title Goes Here" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SHf-G5-Y81">
-                                        <rect key="frame" x="20" y="10" width="119" height="21"/>
+                                        <rect key="frame" x="20" y="0.0" width="119" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b5p-T1-BuM">
-                                        <rect key="frame" x="20" y="39" width="280" height="43"/>
+                                        <rect key="frame" x="20" y="29" width="280" height="43"/>
                                         <string key="text">This is a collection of my favorite songs to listen to when working out. It's got everything from fast cardio to power workout tunes. All the right fuel to get your engine going.</string>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="12"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
@@ -94,10 +94,10 @@
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="b5p-T1-BuM" secondAttribute="trailing" constant="20" id="0Q8-Mi-SeJ"/>
                                     <constraint firstItem="SHf-G5-Y81" firstAttribute="leading" secondItem="8yL-IQ-aHe" secondAttribute="leading" constant="20" id="QTg-ZJ-gfL"/>
-                                    <constraint firstAttribute="width" secondItem="8yL-IQ-aHe" secondAttribute="height" multiplier="32:9" id="ZOQ-Pz-y37"/>
+                                    <constraint firstAttribute="width" secondItem="8yL-IQ-aHe" secondAttribute="height" multiplier="32:9" constant="35.555555555555543" id="ZOQ-Pz-y37"/>
                                     <constraint firstItem="b5p-T1-BuM" firstAttribute="top" secondItem="SHf-G5-Y81" secondAttribute="bottom" constant="8" id="bzM-hI-obt"/>
                                     <constraint firstItem="b5p-T1-BuM" firstAttribute="leading" secondItem="8yL-IQ-aHe" secondAttribute="leading" constant="20" id="mA2-Ie-Yfp"/>
-                                    <constraint firstItem="SHf-G5-Y81" firstAttribute="top" secondItem="8yL-IQ-aHe" secondAttribute="top" constant="10" id="wnS-Kr-zQ7"/>
+                                    <constraint firstItem="SHf-G5-Y81" firstAttribute="top" secondItem="8yL-IQ-aHe" secondAttribute="top" id="wnS-Kr-zQ7"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -107,8 +107,8 @@
                             <constraint firstAttribute="trailing" secondItem="8yL-IQ-aHe" secondAttribute="trailing" id="AiC-eS-9db"/>
                             <constraint firstItem="8yL-IQ-aHe" firstAttribute="leading" secondItem="igj-t9-DcB" secondAttribute="leading" id="FA6-d3-w2q"/>
                             <constraint firstItem="XVK-GU-lG5" firstAttribute="bottom" secondItem="8yL-IQ-aHe" secondAttribute="bottom" id="MXv-Tw-6eI"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="XVK-GU-lG5" secondAttribute="trailing" id="SqF-Mo-ff6"/>
-                            <constraint firstItem="XVK-GU-lG5" firstAttribute="leading" secondItem="igj-t9-DcB" secondAttribute="leadingMargin" id="iNH-ua-Ash"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="XVK-GU-lG5" secondAttribute="trailing" constant="-16" id="SqF-Mo-ff6"/>
+                            <constraint firstItem="XVK-GU-lG5" firstAttribute="leading" secondItem="igj-t9-DcB" secondAttribute="leadingMargin" constant="-16" id="iNH-ua-Ash"/>
                             <constraint firstItem="XVK-GU-lG5" firstAttribute="top" secondItem="BZE-Go-hhm" secondAttribute="bottom" id="kN4-T7-3nu"/>
                         </constraints>
                     </view>
