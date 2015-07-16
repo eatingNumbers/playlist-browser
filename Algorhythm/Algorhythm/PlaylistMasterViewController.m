@@ -34,7 +34,7 @@
     if ([segue.identifier isEqual:@"showPlaylistDetail"]) {
         PlaylistDetailViewController *playlistDetailController = (PlaylistDetailViewController *)segue.destinationViewController;
 
-        playlistDetailController.playlist = [[Playlist alloc] initWithIndex:1];
+        playlistDetailController.playlist = [[Playlist alloc] initWithIndex:0];
         
     }
 }
