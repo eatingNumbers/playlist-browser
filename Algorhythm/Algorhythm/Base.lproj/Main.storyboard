@@ -83,9 +83,9 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b5p-T1-BuM">
-                                        <rect key="frame" x="20" y="39" width="280" height="61"/>
+                                        <rect key="frame" x="20" y="39" width="280" height="43"/>
                                         <string key="text">This is a collection of my favorite songs to listen to when working out. It's got everything from fast cardio to power workout tunes. All the right fuel to get your engine going.</string>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="12"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -113,6 +113,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Artists" id="4iO-oH-4bw"/>
+                    <connections>
+                        <outlet property="playlistCoverImage" destination="XVK-GU-lG5" id="wK2-gD-NDx"/>
+                        <outlet property="playlistDescription" destination="b5p-T1-BuM" id="Xqe-Hq-AeQ"/>
+                        <outlet property="playlistTitle" destination="SHf-G5-Y81" id="lkC-hG-Zl1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R9c-Um-4T2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
