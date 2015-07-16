@@ -2,6 +2,8 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="FIc-av-9NC">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Playlist-->
@@ -35,7 +37,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.1764705882352941" green="0.18431372549019609" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="gec-bm-fxY" secondAttribute="centerX" id="6NE-R2-1Y1"/>
                             <constraint firstAttribute="centerX" secondItem="8UT-ht-7nz" secondAttribute="centerX" id="W9W-VL-ZyU"/>
@@ -65,24 +67,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You haven't pressed the button" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d5Q-xH-3Uf">
-                                <rect key="frame" x="40" y="273" width="240" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="XVK-GU-lG5">
+                                <rect key="frame" x="16" y="64" width="288" height="261"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="XVK-GU-lG5" secondAttribute="height" multiplier="32:29" id="fzO-L4-I9X"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.35294117650000001" green="0.73333333329999995" blue="0.70980392160000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.1764705882" green="0.1843137255" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" red="0.35294117650000001" green="0.73333333329999995" blue="0.70980392160000005" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="d5Q-xH-3Uf" secondAttribute="centerX" id="3k4-Fb-3Rs"/>
-                            <constraint firstAttribute="centerY" secondItem="d5Q-xH-3Uf" secondAttribute="centerY" id="4yi-Wr-lIq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="XVK-GU-lG5" secondAttribute="trailing" id="SqF-Mo-ff6"/>
+                            <constraint firstItem="XVK-GU-lG5" firstAttribute="leading" secondItem="igj-t9-DcB" secondAttribute="leadingMargin" id="iNH-ua-Ash"/>
+                            <constraint firstItem="XVK-GU-lG5" firstAttribute="top" secondItem="BZE-Go-hhm" secondAttribute="bottom" id="kN4-T7-3nu"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Artists" id="4iO-oH-4bw"/>
-                    <connections>
-                        <outlet property="buttonPressLabel" destination="d5Q-xH-3Uf" id="12q-jb-d0c"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R9c-Um-4T2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -93,9 +93,13 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FIc-av-9NC" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dbK-rC-mKh">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="dbK-rC-mKh">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.1764705882" green="0.1843137255" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
