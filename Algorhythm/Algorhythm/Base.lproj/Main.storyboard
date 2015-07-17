@@ -37,12 +37,12 @@
                                     <outletCollection property="gestureRecognizers" destination="05m-d5-SIj" appends="YES" id="Lg8-1X-U2b"/>
                                 </connections>
                             </imageView>
-                            <imageView contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="a8x-Lm-nx7">
-                                <rect key="frame" x="161" y="66" width="157" height="165"/>
-                                <gestureRecognizers/>
-                            </imageView>
                             <imageView contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="eSo-YS-7XP">
                                 <rect key="frame" x="161" y="233" width="157" height="165"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <imageView contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="a8x-Lm-nx7">
+                                <rect key="frame" x="161" y="64" width="157" height="165"/>
                                 <gestureRecognizers/>
                             </imageView>
                         </subviews>
@@ -80,6 +80,11 @@
                     <navigationItem key="navigationItem" title="Playlist" id="6BC-Iu-Ik3"/>
                     <connections>
                         <outletCollection property="playlistImageViews" destination="8UT-ht-7nz" id="1OJ-rt-APo"/>
+                        <outletCollection property="playlistImageViews" destination="a8x-Lm-nx7" id="ox0-e5-dtU"/>
+                        <outletCollection property="playlistImageViews" destination="4z0-NB-xG9" id="tnC-Nz-wjY"/>
+                        <outletCollection property="playlistImageViews" destination="eSo-YS-7XP" id="3Yj-KG-Da8"/>
+                        <outletCollection property="playlistImageViews" destination="Fdh-Xb-gOC" id="Rap-5o-i2T"/>
+                        <outletCollection property="playlistImageViews" destination="xw8-fn-P7W" id="N1g-w4-I6U"/>
                         <segue destination="LCS-HJ-9PZ" kind="push" identifier="showPlaylistDetail" id="4gx-L3-9Em"/>
                     </connections>
                 </viewController>
