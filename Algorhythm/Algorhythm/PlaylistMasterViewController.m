@@ -38,10 +38,19 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.identifier isEqual:@"showPlaylistDetail"]) {
-        PlaylistDetailViewController *playlistDetailController = (PlaylistDetailViewController *)segue.destinationViewController;
-
-        playlistDetailController.playlist = [[Playlist alloc] initWithIndex:0];
         
+        UIImageView *playlistImageView = (UIImageView *)[sender view];
+        
+        if ([self.playlistImageViews containsObject:playlistImageView]) {
+            NSUInteger index = [self.playlistImageViews indexOfObject:playlistImageView];
+        
+            PlaylistDetailViewController *playlistDetailController = (PlaylistDetailViewController *)segue.destinationViewController;
+            
+            playlistDetailController.playlist = [[Playlist alloc] initWithIndex:index];
+        
+        
+        
+        }
     }
 }
 
